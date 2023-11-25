@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    /* ... أي تعديلات إضافية ... */
+}
+
+/* تعديلات للأجهزة الصغيرة */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .home .nav-logo {
+        width: 90%;
+    }
+
+    .about .box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .about .info {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* تعديلات للأجهزة الكبيرة */
+@media screen and (min-width: 1200px) {
+    .nav-links {
+        width: 50%;
+        /* تعديل عرض وتنسيق القائمة */
+    }
+
+    .home .nav-logo {
+        width: 30%;
+    }
+
+    .about .box {
+        width: 40%;
+        padding: 0 40px;
+    }
+
+    .about .info {
+        width: 60%;
+        padding: 0 40px;
+    }
+}
